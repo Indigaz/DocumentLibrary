@@ -25,4 +25,5 @@ Open PuTTYgen.  Within the "Parameters" secion, select "SSH-2 RSA" and specify 4
 Save the public and private key.  Name them something identifiable like "beltonmc_rsa" for the private key and "beltonmc_rsa.pub" for the public key.  Also, store them somewhere out of sight--as in not on your Desktop...
 
 ## Connect to a remote machine
-Depending on what your remote machine...
+Depending on what your remote machine is dictates what you will do.
+
