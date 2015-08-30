@@ -10,6 +10,7 @@ We could use a password to authenticate ourselves to the remote server, but pass
 Notice I said "pair".  That's wright, we are tecnically creating 2 keys: a public key and a private key.  The public key we will place on the remote server.  The private key we will keep on our computer AND GUARD WITH OUR LIFE!  Seriously, if soneone gets you private key, they essentially know your password.  That's like telling your x your password to your bank account...sorta.
 
 ### Creating a keypair on *nix
+Open your favorite terminal emulater and issue the following commands:
 ```bash
 cd ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "[your e-mail address here]"
@@ -19,3 +20,9 @@ ssh-keygen -t rsa -b 4096 -C "[your e-mail address here]"
 Two files should have been created: `[whateverYouNamedYourKey]` and `[whateverYouNamedYourKey].pub`.  The `.pub` key is your public key.
 
 ### Creating a keypair on Windows
+Open PuTTYgen.  Within the "Parameters" secion, select "SSH-2 RSA" and specify 4096 as the "Number of bits in a generated key".  Click the "Generate" button.  You'll have to move your mouse around in the "blank area" to generate some randomness for the keys.  After that put your email address in the "Key comment" box.
+
+Save the public and private key.  Name them something identifiable like "beltonmc_rsa" for the private key and "beltonmc_rsa.pub" for the public key.  Also, store them somewhere out of sight--as in not on your Desktop...
+
+## Connect to a remote machine
+Depending on what your remote machine...
