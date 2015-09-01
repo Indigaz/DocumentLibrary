@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -sL https://deb.nodesource.com/setup | sudo bash -
-apt-get install nodejs zip
+apt-get install -y nodejs zip
 
 npm install npm@2.5.0 -g
 
