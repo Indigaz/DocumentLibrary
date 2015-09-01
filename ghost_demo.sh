@@ -16,7 +16,7 @@ cd ghost/
 
 sudo npm install --production
 
-PUBLIC_IP=`dig +short myip.opendns.com @resolver1.opendns.com`
+PUBLIC_IP=`ifconfig eth0 | grep 'inet addr' | cut -d ':' -f 2 | cut -d ' ' -f 1`
 cp config.example.js config.js
 sed -i -e "s|http://my-ghost-blog.com|http://${PUBLIC_IP}|" config.js
 sed -i -e "s|127.0.0.1|0.0.0.0|" config.js
